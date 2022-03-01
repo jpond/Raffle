@@ -19,16 +19,7 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.status(200).json({
-        raffles: {
-            first: {
-                bottle: "EHT Small Batch",
-                date: "3/2/22"
-            },
-            second: {
-                bottle: "Weller 10 yr",
-                date: "3/8/22"
-            }
-        }
+        raffles: [{bottle:"EHT 10 yr", date:"3/2/22"}, {bottle:"Weller 12 yr", date:"3/2/22"}]
     })
 });
 
