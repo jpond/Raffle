@@ -54,8 +54,8 @@ mongodb.connect('mongodb://127.0.0.1:27017/blockchain-node-api',
     }
 );
 */
-app.listen(3001, () => {
-    console.log("listening on port 3001...");
+app.listen(process.env.PORT || 3001, () => {
+    console.log("listening on " + process.env.PORT);
 });
 exports.web3 = web3;
 exports.app = app;
