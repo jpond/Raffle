@@ -19,7 +19,8 @@ app.use(express.json());
 
 app.get('/', (req, res) => {
     res.status(200).json({
-        raffles: [{bottle:"EHT 10 yr", date:"3/2/22", link:"1"}, {bottle:"Weller 12 yr", date:"3/2/22", link:"2"}]
+        raffles: [{bottle:"EHT 10 yr", date:"3/2/22", link:"/raffles/future/1"}, {bottle:"Weller 12 yr", date:"3/2/22", link:"/raffles/future/2"}],
+        currentRaffle: {bottle: "EH Taylor Single Barrel", time:"6pm CT 3/2/22", link:"/raffles/current/2"}
     })
 });
 
