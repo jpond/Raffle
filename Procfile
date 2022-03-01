@@ -1,1 +1,1 @@
-web: node ./SmartRaffleApi/server.js
+"web: node ./SmartRaffleApi/server.js"
